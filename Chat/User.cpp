@@ -1,5 +1,6 @@
 #include "User.h"
 #include <iostream>
+#include <vector>
 
 User::User()
 {
@@ -46,3 +47,7 @@ void User::setSurname(std::string surname)
 {
 	_surname = surname;
 }
+void User::addUser(int b)
+{
+	friends.push_back(b);
+};
