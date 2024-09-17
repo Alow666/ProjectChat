@@ -4,10 +4,12 @@
 #include "User.h"
 #include "Entrance.h"
 
+
 int main()
 {
 	setlocale(LC_ALL, "Rus");
-	int сhoice, choice2, choice3, choice4, choice5;
+	int сhoice, choice2, choice4, choice5;
+	int entranceIndex;
 	bool permission_to_enter = false;
 	bool friend1 = false;
 	bool exit = true;
@@ -40,11 +42,13 @@ int main()
 
 			permission_to_enter = ptr_entrance->entrancePassword(vectorUser);//проверка пароля
 
-			if (permission_to_enter == true) std::cout << "Добро пожаловать " << vectorUser[ptr_entrance->getIndex()].getName()<< std::endl; ;
+			if (permission_to_enter == true) std::cout << "Добро пожаловать " << vectorUser[ptr_entrance->getIndex()].getName()<< std::endl; 
+
+			entranceIndex = ptr_entrance->getIndex();//№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
 
 			while (permission_to_enter) // Управление учеткой 
 			{
-				std::cout << "1) Чат" << std::endl;
+				std::cout << "\n1) Чат" << std::endl;
 				std::cout << "2) Дузья" << std::endl;
 				std::cout << "3) Настройка аккаунта" << std::endl;
 				std::cout << "0) Выйти из аккаунта" << std::endl;
@@ -78,7 +82,7 @@ int main()
 
 				case 2:
 
-					std::cout << "1) Мои друзья" << std::endl;
+					std::cout << "\n1) Мои друзья" << std::endl;
 					std::cout << "2) Пользователи чата (добавить в друзья)" << std::endl;
 					std::cout << "0) Вернуться назад" << std::endl;
 
@@ -87,7 +91,19 @@ int main()
 					switch (choice4) 
 					{
 					case 1:
+						std::cout << "Ваши друзья:" << std::endl;
 
+						if(vectorUser[ptr_entrance->getIndex()].getSizeFriends() == 0) //может не показывать первого друга
+						{
+							std::cout << "У вас пока что нету друзей(" << std::endl;
+							continue;
+						}
+						if (vectorUser[ptr_entrance->getIndex()].getSizeFriends() > 0)
+						{
+							vectorUser[ptr_entrance->getIndex()].getFriends(vectorUser);
+							continue;
+						}
+			
 					case 2:
 
 						std::cout << "Пользователи:" << std::endl;
@@ -128,7 +144,7 @@ int main()
 
 							if (ptr_entrance->getIndex() != choice5 )
 							{
-								vectorUser[ptr_entrance->getIndex()].addUser(choice5);
+								vectorUser[ptr_entrance->getIndex()].addFriends(choice5);
 								std::cout << "Вы добавили" << vectorUser[choice5].getName() << " " << vectorUser[choice5].getSurname()<< " в друзья" <<std::endl;
 								break;
 							}
@@ -154,11 +170,6 @@ int main()
 					std::cout << "Выберите что то из списка !" << std::endl;
 					continue;
 				}
-
-
-
-			
-				
 			}
 			continue;
 		case 2:

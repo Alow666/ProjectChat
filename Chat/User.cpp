@@ -2,6 +2,8 @@
 #include <iostream>
 #include <vector>
 
+
+
 User::User()
 {
 	std::cout << "¬ведите логин: " << std::endl;
@@ -47,7 +49,20 @@ void User::setSurname(std::string surname)
 {
 	_surname = surname;
 }
-void User::addUser(int b)
+void User::addFriends(int b)
 {
 	friends.push_back(b);
+};
+
+size_t User::getSizeFriends()
+{
+	return friends.size();
+};
+
+void User::getFriends(std::vector<User>& other)
+{
+	for (int i = 0; i < friends.size(); i++)
+	{
+		std::cout << other[friends[i]].getName() << " " << other[friends[i]].getSurname() << std::endl;
+	}
 };

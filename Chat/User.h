@@ -27,8 +27,9 @@ public:
 	void setName(std::string name);
 	void setSurname(std::string surname);
 
-	void addUser(int b);
-
-
+	void addFriends(int b);
+	size_t getSizeFriends();
+	void getFriends(std::vector<User>& other);
+	
 };
 
