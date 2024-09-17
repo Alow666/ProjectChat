@@ -26,7 +26,7 @@ std::string User::getName()
 {
 	return _name;
 }
-std::string User::getSuename()
+std::string User::getSurname()
 {
 	return _surname;
 }

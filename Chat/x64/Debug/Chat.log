@@ -1,5 +1,99 @@
 ﻿  Entrance.cpp
   main.cpp
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,15): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,15): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,15): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,18): error C2143: синтаксическая ошибка: отсутствие ";" перед "строка"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,53): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,53): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,53): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,56): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "vectorUser"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,102): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,102): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,102): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,105): error C2143: синтаксическая ошибка: отсутствие ";" перед "строка"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,109): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,109): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,109): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,112): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "vectorUser"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,149): error C2039: "getSurname": не является членом "User".
+  C:\Users\Ульяна\Desktop\ProjectChat\Chat\User.h(5,7):
+   см. объявление "User"
+  
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,162): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,162): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,162): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,170): error C2143: синтаксическая ошибка: отсутствие ";" перед "std::endl"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(43,170): warning C4551: в вызове функции отсутствует список аргументов
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(44,15): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(44,15): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(44,15): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(44,18): error C2143: синтаксическая ошибка: отсутствие ";" перед "строка"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(44,30): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(44,30): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(44,30): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(44,38): error C2143: синтаксическая ошибка: отсутствие ";" перед "std::endl"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(44,38): warning C4551: в вызове функции отсутствует список аргументов
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(45,15): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(45,15): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(45,15): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(45,18): error C2143: синтаксическая ошибка: отсутствие ";" перед "строка"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(45,36): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(45,36): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(45,36): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(45,44): error C2143: синтаксическая ошибка: отсутствие ";" перед "std::endl"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(45,44): warning C4551: в вызове функции отсутствует список аргументов
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(46,15): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(46,15): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(46,15): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(46,18): error C2143: синтаксическая ошибка: отсутствие ";" перед "строка"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(46,49): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(46,49): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(46,49): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(46,57): error C2143: синтаксическая ошибка: отсутствие ";" перед "std::endl"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(46,57): warning C4551: в вызове функции отсутствует список аргументов
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(47,15): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(47,15): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(47,15): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(47,18): error C2143: синтаксическая ошибка: отсутствие ";" перед "строка"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(47,56): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(47,56): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(47,56): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(47,64): error C2143: синтаксическая ошибка: отсутствие ";" перед "std::endl"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(47,64): warning C4551: в вызове функции отсутствует список аргументов
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(49,14): error C3873: "0xbb": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(49,14): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "»"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(49,14): error C2065: »: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(49,17): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "сhoice2"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(49,17): error C2065: сhoice2: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(51,13): error C2065: сhoice2: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(52,5): error C2050: значение выражения для варианта выбора не является целым
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(54,16): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(54,16): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(54,16): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(54,19): error C2143: синтаксическая ошибка: отсутствие ";" перед "строка"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(54,31): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(54,31): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(54,31): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(54,39): error C2143: синтаксическая ошибка: отсутствие ";" перед "std::endl"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(54,39): warning C4551: в вызове функции отсутствует список аргументов
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(63,16): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(63,16): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(63,16): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(63,19): error C2143: синтаксическая ошибка: отсутствие ";" перед "строка"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(63,56): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(63,56): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(63,56): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(63,64): error C2143: синтаксическая ошибка: отсутствие ";" перед "std::endl"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(63,64): warning C4551: в вызове функции отсутствует список аргументов
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(66,16): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(66,16): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(66,16): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(66,19): error C2143: синтаксическая ошибка: отсутствие ";" перед "строка"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(66,70): error C3873: "0xab": этот символ недопустим как первый символ идентификатора
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(66,70): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "«"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(66,70): error C2065: «: необъявленный идентификатор
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(66,78): error C2143: синтаксическая ошибка: отсутствие ";" перед "std::endl"
+C:\Users\Ульяна\Desktop\ProjectChat\Chat\main.cpp(66,78): warning C4551: в вызове функции отсутствует список аргументов
   User.cpp
   Создание кода...
-  Chat.vcxproj -> C:\Users\mrden\C++\Chat\Chat\Chat\x64\Debug\Chat.exe

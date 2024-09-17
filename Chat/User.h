@@ -18,7 +18,7 @@ public:
 	std::string getLogin();
 	std::string getPassword();
 	std::string getName();
-	std::string getSuename();
+	std::string getSurname();
 	void setLogin(std::string login);
 	void setPassword(std::string password);
 	void setName(std::string name);

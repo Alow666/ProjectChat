@@ -7,7 +7,7 @@
 int main()
 {
 	setlocale(LC_ALL, "Rus");
-	int сhoice;
+	int сhoice, choice2;
 	bool permission_to_enter = false;
 	std:: vector <User> vectorUser; //Вектор с пользователями
 	std::unique_ptr<Entrance> ptr_entrance = std::make_unique <Entrance>();// вход в учетки
@@ -40,7 +40,32 @@ int main()
 
 			while (permission_to_enter) // Управление учеткой 
 			{
-				
+				std::cout << "Добро пожаловать " << vectorUser[ptr_entrance->getIndex()].getName()<< " " << vectorUser[ptr_entrance->getIndex()].getSurname() << std::endl;
+				std::cout << "1) Чат" << std::endl;
+				std::cout << "2) Друзья" << std::endl;
+				std::cout << "3) Меню настроек" << std::endl;
+				std::cout << "0) Выйти из аккаунта" << std::endl;
+
+				std::cin >> choice2;
+
+				switch (choice2)
+				{
+				case 1:
+					std::cout << "1) Чат" << std::endl;
+					continue;
+				case 2:
+
+					continue;
+				case 3:
+
+					continue;
+				case 0:
+					std::cout << "До скорой встречи!)" << std::endl;
+					break;
+				default:
+					std::cout << "Выберите что то из списка !" << std::endl;
+					continue;
+				}
 
 
 

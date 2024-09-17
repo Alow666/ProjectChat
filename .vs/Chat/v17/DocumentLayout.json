@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\\u0423\u043B\u044C\u044F\u043D\u0430\\Desktop\\ProjectChat\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|C:\\Users\\\u0423\u043B\u044C\u044F\u043D\u0430\\Desktop\\ProjectChat\\Chat\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\\u0423\u043B\u044C\u044F\u043D\u0430\\Desktop\\ProjectChat\\Chat\\main.cpp",
+              "RelativeDocumentMoniker": "Chat\\main.cpp",
+              "ToolTip": "C:\\Users\\\u0423\u043B\u044C\u044F\u043D\u0430\\Desktop\\ProjectChat\\Chat\\main.cpp*",
+              "RelativeToolTip": "Chat\\main.cpp*",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-17T07:49:13.884Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
