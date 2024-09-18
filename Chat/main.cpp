@@ -11,15 +11,14 @@ int main()
 	int сhoice, choice2, choice4, choice5;
 	int entranceIndex;
 	bool permission_to_enter = false;
-	bool friend1 = false;
-	bool exit = true;
+	std::string login;
 	std:: vector <User> vectorUser; //Вектор с пользователями
 	std::unique_ptr<Entrance> ptr_entrance = std::make_unique <Entrance>();// вход в учетки
 
 
 	std::cout << "Добро пожаловать в чат!" << std::endl;
 
-	while (exit)
+	while (true)
 	{
 		std::cout << "1)Войти в аккаунт \n2)Зарегистрировать аккаунт \n3)Выйти" << std::endl;
 		std::cin >> сhoice;
@@ -44,7 +43,7 @@ int main()
 
 			if (permission_to_enter == true) std::cout << "Добро пожаловать " << vectorUser[ptr_entrance->getIndex()].getName()<< std::endl; 
 
-			entranceIndex = ptr_entrance->getIndex();//№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
+			
 
 			while (permission_to_enter) // Управление учеткой 
 			{
@@ -128,7 +127,7 @@ int main()
 
 						do
 						{
-							std::cin >> choice5; // Нужен Try и ловить искл (переполнение вектора) ##############################################################################
+							std::cin >> choice5; 
 
 							if (vectorUser.size() < choice5)
 							{
@@ -151,38 +150,83 @@ int main()
 							break;
 						} while (true);
 						break;
+
 					case 0:
+
 						break;
+
 					default:
+
 						std::cout << "Выберите что то из списка !" << std::endl;
 						continue;
+
 					}
 					continue;
+
 				case 3:
 
 
+
 					continue;
+
 				case 0:
+
 					std::cout << "До скорой встречи!)" << std::endl;
 					permission_to_enter = false;
 					break;
+
 				default:
 					std::cout << "Выберите что то из списка !" << std::endl;
 					continue;
+
 				}
 			}
 			continue;
 		case 2:
-			vectorUser.push_back(User());
+
+			while (true)
+			{
+				std::cout << "Введите логин: " << std::endl;
+				std::cin >> login;
+
+				if (vectorUser.size() == 0)
+				{
+					vectorUser.push_back(User(login));
+					break;
+				}
+
+				if (vectorUser.size() > 0) 
+				{
+					int i = 0;
+					do
+					{
+						if (login == vectorUser[i].getLogin())
+						{
+							std::cout << "Логин занят попробуйте другой" << std::endl;
+							std::cin >> login;
+							i = 0;
+							continue;
+						}
+						i++;
+					} while (i < vectorUser.size());
+					
+					vectorUser.push_back(User(login));
+					break;
+				}
+			}
 			std::cout << "Теперь вы можете войти в аккаунт." << std::endl;
 			continue;
+
 		case 3:
+
 			std::cout << "До скорой встречи!" << std::endl;
-			exit = false;
 			break;
+
 		default:
+
 			std::cout << "Выберите что то из списка !" << std::endl;
 			continue;
+
 		}
 	}
 	return 0;

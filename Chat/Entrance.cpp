@@ -55,7 +55,7 @@ bool Entrance::entranceLogin(std::vector<User>& other)
 
 			std::cout << "¬ведите логин: " << std::endl;
 			std::cin >> _loginScan;
-
+			
 			for (int i = 0; i < other.size(); i++)
 			{
 				if (other[i].getLogin() == _loginScan)

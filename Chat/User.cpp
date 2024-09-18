@@ -4,10 +4,8 @@
 
 
 
-User::User()
+User::User(std::string login) : _login(login)
 {
-	std::cout << "¬ведите логин: " << std::endl;
-	std::cin >> _login;
 	std::cout << "¬ведите пароль: " << std::endl;
 	std::cin >> _password;
 	std::cout << "¬ведите ваше им€: " << std::endl;

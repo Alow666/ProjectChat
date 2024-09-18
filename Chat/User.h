@@ -16,7 +16,7 @@ private:
 
 public:
 
-	User();
+	User(std::string login);
 	~User() = default;
 	std::string getLogin();
 	std::string getPassword();
@@ -26,6 +26,7 @@ public:
 	void setPassword(std::string password);
 	void setName(std::string name);
 	void setSurname(std::string surname);
+	/*bool setCreatelogin(std::vector<User>& other)*/;
 
 	void addFriends(int b);
 	size_t getSizeFriends();
