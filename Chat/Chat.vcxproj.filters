@@ -24,6 +24,9 @@
     <ClCompile Include="Entrance.cpp">
       <Filter>Файлы заголовков</Filter>
     </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="User.h">
@@ -31,6 +34,9 @@
     </ClInclude>
     <ClInclude Include="Entrance.h">
       <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

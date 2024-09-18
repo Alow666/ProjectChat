@@ -3,18 +3,19 @@
 
 #include "User.h"
 #include "Entrance.h"
+#include "Settings.h"
 
 
 int main()
 {
 	setlocale(LC_ALL, "Rus");
-	int сhoice, choice2, choice4, choice5;
+	int сhoice, choice2, choice3, choice4, choice5;
 	int entranceIndex;
 	bool permission_to_enter = false;
-	std::string login;
+	std::string xxx;
 	std:: vector <User> vectorUser; //Вектор с пользователями
 	std::unique_ptr<Entrance> ptr_entrance = std::make_unique <Entrance>();// вход в учетки
-
+	std::unique_ptr<Setting> ptr_setting = std::make_unique <Setting>()
 
 	std::cout << "Добро пожаловать в чат!" << std::endl;
 
@@ -92,7 +93,7 @@ int main()
 					case 1:
 						std::cout << "Ваши друзья:" << std::endl;
 
-						if(vectorUser[ptr_entrance->getIndex()].getSizeFriends() == 0) //может не показывать первого друга
+						if(vectorUser[ptr_entrance->getIndex()].getSizeFriends() == 0) 
 						{
 							std::cout << "У вас пока что нету друзей(" << std::endl;
 							continue;
@@ -152,18 +153,38 @@ int main()
 						break;
 
 					case 0:
-
 						break;
 
 					default:
-
 						std::cout << "Выберите что то из списка !" << std::endl;
 						continue;
-
 					}
 					continue;
-
 				case 3:
+
+					std::cout << "\n1) Изменить логин" << std::endl;
+					std::cout << "2) Изменить пароль" << std::endl;
+					std::cout << "3) Изменить имя" << std::endl;
+					std::cout << "4) Изменить фамилию" << std::endl;
+					std::cout << "0) Вернуться назад" << std::endl;
+					std::cin >> choice3;
+
+					switch (choice3)
+					{
+					case 1:
+
+					case 2:
+
+						vectorUser[ptr_entrance->getIndex()].setPassword(xxx);
+					case 3:
+
+					case 4:
+
+					default:
+						break;
+					}
+
+
 
 
 
@@ -187,11 +208,11 @@ int main()
 			while (true)
 			{
 				std::cout << "Введите логин: " << std::endl;
-				std::cin >> login;
+				std::cin >> xxx;
 
 				if (vectorUser.size() == 0)
 				{
-					vectorUser.push_back(User(login));
+					vectorUser.push_back(User(xxx));
 					break;
 				}
 
@@ -200,17 +221,17 @@ int main()
 					int i = 0;
 					do
 					{
-						if (login == vectorUser[i].getLogin())
+						if (xxx == vectorUser[i].getLogin())
 						{
 							std::cout << "Логин занят попробуйте другой" << std::endl;
-							std::cin >> login;
+							std::cin >> xxx;
 							i = 0;
 							continue;
 						}
 						i++;
 					} while (i < vectorUser.size());
 					
-					vectorUser.push_back(User(login));
+					vectorUser.push_back(User(xxx));
 					break;
 				}
 			}

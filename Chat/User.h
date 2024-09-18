@@ -16,6 +16,7 @@ private:
 
 public:
 
+	User() = default;
 	User(std::string login);
 	~User() = default;
 	std::string getLogin();

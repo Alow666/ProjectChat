@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\Settings.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\Settings.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\Settings.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\Settings.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -22,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,39 +38,65 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "Settings.cpp",
+              "DocumentMoniker": "C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\Settings.cpp",
+              "RelativeDocumentMoniker": "Chat\\Settings.cpp",
+              "ToolTip": "C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\Settings.cpp",
+              "RelativeToolTip": "Chat\\Settings.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-18T06:21:56.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Settings.h",
+              "DocumentMoniker": "C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\Settings.h",
+              "RelativeDocumentMoniker": "Chat\\Settings.h",
+              "ToolTip": "C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\Settings.h",
+              "RelativeToolTip": "Chat\\Settings.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-18T06:21:43.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "User.h",
               "DocumentMoniker": "C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\User.h",
               "RelativeDocumentMoniker": "Chat\\User.h",
               "ToolTip": "C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\User.h",
               "RelativeToolTip": "Chat\\User.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-09-17T07:54:14.56Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "User.cpp",
               "DocumentMoniker": "C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\User.cpp",
               "RelativeDocumentMoniker": "Chat\\User.cpp",
               "ToolTip": "C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\User.cpp",
               "RelativeToolTip": "Chat\\User.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-17T07:54:32.523Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\main.cpp",
               "RelativeDocumentMoniker": "Chat\\main.cpp",
-              "ToolTip": "C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\main.cpp*",
-              "RelativeToolTip": "Chat\\main.cpp*",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAAAIEAAAAcAAAA",
+              "ToolTip": "C:\\Users\\mrden\\OneDrive\\Desktop\\\u0423\u0427\u0415\u0411\u0410\\\u043F\u0420\u041E\u0415\u041A\u0422\u042B\\ProjectChat\\Chat\\main.cpp",
+              "RelativeToolTip": "Chat\\main.cpp",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAA4AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-17T07:49:13.884Z",
               "EditorCaption": ""
