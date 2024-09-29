@@ -46,34 +46,21 @@ int Entrance::getIndex()
 
 bool Entrance::entranceLogin(std::vector<User>& other)
 {
-	int a = 1;
 	while (true)
 	{
-		switch (a)
-		{
-		case 1:
-
-			std::cout << "Введите логин: " << std::endl;
-			std::cin >> _loginScan;
+		std::cout << "Введите логин: " << std::endl;
+		std::cin >> _loginScan;
 			
-			for (int i = 0; i < other.size(); i++)
+		for (int i = 0; i < other.size(); i++)
+		{
+			if (other[i].getLogin() == _loginScan)
 			{
-				if (other[i].getLogin() == _loginScan)
-				{
-					_index = i;
-					return true;
-				}
+				_index = i;
+				return true;
 			}
-			std::cout << "Такого пользователя не существует(\n Хотите продолжить введите (1), если хотите выйти (0)." << std::endl;
-			std::cin >> a;
-			continue;
-		case 0:
-			return false;
-		default:
-			std::cout << "Введите 1 или 0! " << std::endl;
-			std::cin >> a;
-			continue;
 		}
+		std::cout << "Такого пользователя не существует!" << std::endl;
+		return false;
 	}
 }
 

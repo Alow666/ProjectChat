@@ -31,7 +31,7 @@ std::string User::getSurname()
 {
 	return _surname;
 }
-void User::setLogin(std::string login)
+ void User::setLogin(std::string login)
 {
 	_login = login ;
 }

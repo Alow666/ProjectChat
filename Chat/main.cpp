@@ -3,19 +3,16 @@
 
 #include "User.h"
 #include "Entrance.h"
-#include "Settings.h"
 
 
 int main()
 {
 	setlocale(LC_ALL, "Rus");
-	int сhoice, choice2, choice3, choice4, choice5;
-	int entranceIndex;
+	int сhoice;
 	bool permission_to_enter = false;
 	std::string xxx;
 	std:: vector <User> vectorUser; //Вектор с пользователями
 	std::unique_ptr<Entrance> ptr_entrance = std::make_unique <Entrance>();// вход в учетки
-	std::unique_ptr<Setting> ptr_setting = std::make_unique <Setting>()
 
 	std::cout << "Добро пожаловать в чат!" << std::endl;
 
@@ -49,13 +46,13 @@ int main()
 			while (permission_to_enter) // Управление учеткой 
 			{
 				std::cout << "\n1) Чат" << std::endl;
-				std::cout << "2) Дузья" << std::endl;
+				std::cout << "2) Друзья" << std::endl;
 				std::cout << "3) Настройка аккаунта" << std::endl;
 				std::cout << "0) Выйти из аккаунта" << std::endl;
 
-				std::cin >> choice2;
+				std::cin >> сhoice;
 
-				switch (choice2)
+				switch (сhoice)
 				{
 				case 1:
 
@@ -81,115 +78,167 @@ int main()
 					continue;
 
 				case 2:
-
-					std::cout << "\n1) Мои друзья" << std::endl;
-					std::cout << "2) Пользователи чата (добавить в друзья)" << std::endl;
-					std::cout << "0) Вернуться назад" << std::endl;
-
-					std::cin >> choice4;
-
-					switch (choice4) 
+					while (true)
 					{
-					case 1:
-						std::cout << "Ваши друзья:" << std::endl;
+						std::cout << "\n1) Мои друзья" << std::endl;
+						std::cout << "2) Пользователи чата (добавить в друзья)" << std::endl;
+						std::cout << "0) Вернуться назад" << std::endl;
 
-						if(vectorUser[ptr_entrance->getIndex()].getSizeFriends() == 0) 
+						std::cin >> сhoice;
+
+						switch (сhoice)
 						{
-							std::cout << "У вас пока что нету друзей(" << std::endl;
-							continue;
-						}
-						if (vectorUser[ptr_entrance->getIndex()].getSizeFriends() > 0)
-						{
-							vectorUser[ptr_entrance->getIndex()].getFriends(vectorUser);
-							continue;
-						}
-			
-					case 2:
+						case 1:
+							std::cout << "Ваши друзья:" << std::endl;
 
-						std::cout << "Пользователи:" << std::endl;
-						choice5 = 0;
-
-						for (; choice5 < vectorUser.size(); choice5++)
-						{
-
-							if (ptr_entrance->getIndex() == choice5)
+							if (vectorUser[ptr_entrance->getIndex()].getSizeFriends() == 0)
 							{
-								std::cout << choice5 << ") " << vectorUser[choice5].getName() << " " << vectorUser[choice5].getSurname() << " <- Это вы" << std::endl;
-							};
-
-							if (ptr_entrance->getIndex() != choice5)
-							{
-								std::cout << choice5 << ") " << vectorUser[choice5].getName() << " " << vectorUser[choice5].getSurname() << std::endl;
-							};
-							
-						}
-
-						std::cout << "Выберите кого добавить в друзья" << std::endl;
-
-						do
-						{
-							std::cin >> choice5; 
-
-							if (vectorUser.size() < choice5)
-							{
-								std::cout << "Выберите из существующих!" << std::endl;
+								std::cout << "У вас пока что нету друзей(" << std::endl;
 								continue;
-							};
-
-							if (ptr_entrance->getIndex() == choice5)
+							}
+							if (vectorUser[ptr_entrance->getIndex()].getSizeFriends() > 0)
 							{
-								std::cout << "Вы не можете добавить себя!" << std::endl;
-								break;
+								vectorUser[ptr_entrance->getIndex()].getFriends(vectorUser);
+								continue;
 							}
 
-							if (ptr_entrance->getIndex() != choice5 )
+						case 2:
+
+							std::cout << "Пользователи:" << std::endl;
+							сhoice = 0;
+
+							for (; сhoice < vectorUser.size(); сhoice++)
 							{
-								vectorUser[ptr_entrance->getIndex()].addFriends(choice5);
-								std::cout << "Вы добавили" << vectorUser[choice5].getName() << " " << vectorUser[choice5].getSurname()<< " в друзья" <<std::endl;
-								break;
+
+								if (ptr_entrance->getIndex() == сhoice)
+								{
+									std::cout << сhoice << ") " << vectorUser[сhoice].getName() << " " << vectorUser[сhoice].getSurname() << " <- Это вы" << std::endl;
+								};
+
+								if (ptr_entrance->getIndex() != сhoice)
+								{
+									std::cout << сhoice << ") " << vectorUser[сhoice].getName() << " " << vectorUser[сhoice].getSurname() << std::endl;
+								};
+
 							}
+
+							std::cout << "Выберите кого добавить в друзья" << std::endl;
+
+							do
+							{
+								std::cin >> сhoice;
+
+								if (vectorUser.size() < сhoice)
+								{
+									std::cout << "Выберите из существующих!" << std::endl;
+									continue;
+								};
+
+								if (ptr_entrance->getIndex() == сhoice)
+								{
+									std::cout << "Вы не можете добавить себя!" << std::endl;
+									break;
+								}
+
+								if (ptr_entrance->getIndex() != сhoice)
+								{
+									vectorUser[ptr_entrance->getIndex()].addFriends(сhoice);
+									std::cout << "Вы добавили" << vectorUser[сhoice].getName() << " " << vectorUser[сhoice].getSurname() << " в друзья" << std::endl;
+									break;
+								}
+								break;
+
+							} while (true);
+
+							continue;
+
+						case 0:
+
 							break;
-						} while (true);
-						break;
 
-					case 0:
-						break;
+						default:
 
-					default:
-						std::cout << "Выберите что то из списка !" << std::endl;
-						continue;
+							std::cout << "Выберите что то из списка !" << std::endl;
+							continue;
+						}
+						break;
 					}
 					continue;
-				case 3:
 
-					std::cout << "\n1) Изменить логин" << std::endl;
-					std::cout << "2) Изменить пароль" << std::endl;
-					std::cout << "3) Изменить имя" << std::endl;
-					std::cout << "4) Изменить фамилию" << std::endl;
-					std::cout << "0) Вернуться назад" << std::endl;
-					std::cin >> choice3;
-
-					switch (choice3)
+				case 3: // Настройка аккаунта
+					while (true)
 					{
-					case 1:
+						std::cout << "\n1) Изменить логин" << std::endl;
+						std::cout << "2) Изменить пароль" << std::endl;
+						std::cout << "3) Изменить имя" << std::endl;
+						std::cout << "4) Изменить фамилию" << std::endl;
+						std::cout << "0) Вернуться назад" << std::endl;
+						std::cin >> сhoice;
 
-					case 2:
+						switch (сhoice)
+						{
+						case 1:
 
-						vectorUser[ptr_entrance->getIndex()].setPassword(xxx);
-					case 3:
 
-					case 4:
+							while (true)
+							{
+								std::cout << "\nВведите новый логин: " << std::endl;
+								std::cin >> xxx;
+								int i = 0;
+								do
+								{
+									if (xxx == vectorUser[i].getLogin())
+									{
+										std::cout << "Логин занят попробуйте другой!" << std::endl;
+										std::cin >> xxx;
+										i = 0;
+										continue;
+									}
+									i++;
+								} while (i < vectorUser.size());
 
-					default:
+								vectorUser[ptr_entrance->getIndex()].setLogin(xxx);
+								std::cout << "Логин успешно изменен!" << std::endl;
+								break;
+							}
+							continue;
+
+						case 2:
+
+							std::cout << "\nВведите новый пароль: " << std::endl;
+							std::cin >> xxx;
+							vectorUser[ptr_entrance->getIndex()].setPassword(xxx);
+							std::cout << "\nПароль успешно изменен!" << std::endl;
+							continue;
+
+						case 3:
+
+							std::cout << "\nВведите новое Имя: " << std::endl;
+							std::cin >> xxx;
+							vectorUser[ptr_entrance->getIndex()].setName(xxx);
+							std::cout << "\nИмя успешно изменено!" << std::endl;
+							continue;
+
+						case 4:
+
+							std::cout << "\nВведите новую фамилию: " << std::endl;
+							std::cin >> xxx;
+							vectorUser[ptr_entrance->getIndex()].setSurname(xxx);
+							std::cout << "\nФамилия успешно изменена!" << std::endl;
+							continue;
+
+						case 0:
+
+							break;
+
+						default:
+							std::cout << "\nВыберите что то из списка !" << std::endl;
+							continue;
+						}
 						break;
 					}
-
-
-
-
-
 					continue;
-
+					//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 				case 0:
 
 					std::cout << "До скорой встречи!)" << std::endl;
