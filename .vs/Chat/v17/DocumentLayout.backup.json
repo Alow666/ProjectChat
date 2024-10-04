@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "K:\\\u0421\u002B\u002B\\ProjectChat\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\message.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\message.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\Message.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\Message.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\message.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\message.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\Message.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\Message.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\main.cpp",
               "RelativeDocumentMoniker": "Chat\\main.cpp",
-              "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\main.cpp*",
-              "RelativeToolTip": "Chat\\main.cpp*",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
+              "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\main.cpp",
+              "RelativeToolTip": "Chat\\main.cpp",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-17T07:49:13.884Z",
               "IsPinned": true,
@@ -48,13 +48,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "User.h",
               "DocumentMoniker": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\User.h",
               "RelativeDocumentMoniker": "Chat\\User.h",
               "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\User.h",
               "RelativeToolTip": "Chat\\User.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC0AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-04T06:38:58.272Z",
               "IsPinned": true,
@@ -68,33 +68,33 @@
               "RelativeDocumentMoniker": "Chat\\User.cpp",
               "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\User.cpp",
               "RelativeToolTip": "Chat\\User.cpp",
-              "ViewState": "AgIAABMAAAAAAAAAAAAqwEMAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-17T07:54:32.523Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Message.h",
               "DocumentMoniker": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\Message.h",
               "RelativeDocumentMoniker": "Chat\\Message.h",
-              "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\Message.h*",
-              "RelativeToolTip": "Chat\\Message.h*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\Message.h",
+              "RelativeToolTip": "Chat\\Message.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-04T14:59:21.732Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "message.cpp",
               "DocumentMoniker": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\message.cpp",
               "RelativeDocumentMoniker": "Chat\\message.cpp",
-              "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\message.cpp*",
-              "RelativeToolTip": "Chat\\message.cpp*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\message.cpp",
+              "RelativeToolTip": "Chat\\message.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-04T14:59:26.683Z",
               "EditorCaption": ""

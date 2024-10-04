@@ -1,6 +1,4 @@
 #include "User.h"
-#include <iostream>
-#include <vector>
 
 User::User(std::string login) : _login(login)
 {
@@ -31,7 +29,7 @@ std::string User::getSurname()
 }
 
 
- void User::setLogin(std::string login)
+void User::setLogin(std::string login)
 {
 	_login = login ;
 }
@@ -57,6 +55,10 @@ size_t User::getSizeFriends()
 {
 	return friends.size();
 };
+std::string User::getInfoFriends(int index)
+{
+	return friends[index].getName();
+};
 void User::getFriends()
 {
 	for (int i = 0; i < friends.size(); i++)
@@ -64,7 +66,6 @@ void User::getFriends()
 		std::cout <<friends[i].getName() << " " << friends[i].getSurName() << std::endl;
 	}
 };
-
 void User::getFriendsMesssage()
 {
 	for (int i = 0; i < friends.size(); i++)
@@ -72,7 +73,6 @@ void User::getFriendsMesssage()
 		std::cout << i << ") " << friends[i].getName() << " " << friends[i].getSurName() << std::endl;
 	}
 };
-
 bool User::checking_for_friends(std::vector <User>& other, int сhoice)
 {
 	for (int i = 0; i < friends.size(); i++)
@@ -102,4 +102,12 @@ int User::number_of_messages()
 {
 	return messageUser.size();
 };
-
+void User::addMessage(std::string text, int choice)
+{
+	messageUser.push_back(Message(choice, text));
+};
+std::string User::receiving_a_letter(std::vector <User>& other, int indexEntrance, int indexFriend)
+{
+	std::cout << other[indexEntrance].getInfoFriends(indexFriend) << "написал вам сообщение" << std::endl;
+	
+};

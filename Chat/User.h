@@ -3,6 +3,7 @@
 #include <vector>
 #include "Message.h"
 #include "Friends.h"
+#include "Entrance.h"
 
 
 
@@ -37,14 +38,16 @@ public:
 	void addFriends(std::string surname, std::string name, int a);
 	size_t getSizeFriends();
 	void getFriends();
-
+	std::string getInfoFriends(int index);
 	bool checking_for_friends(std::vector <User>& other, int ñhoice);
 	bool checking_for_friends_to_add(int ñhoice);
 
 
 	int number_of_messages();
 	void getFriendsMesssage();
-	//void viewing_messages();
+	void addMessage(std::string text, int choice);
+	
+	std::string receiving_a_letter(std::vector <User>& other, int indexEntrance, int indexFriend);
 	
 
 	

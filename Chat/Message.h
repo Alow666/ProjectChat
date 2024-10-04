@@ -17,9 +17,9 @@ public:
 
 	int getIndex();
 	std::string getMessage();
-	void creatMessage(std::vector <User>& other);
+	
 
-	/*void openMessage();*/
+	
 
 };
 

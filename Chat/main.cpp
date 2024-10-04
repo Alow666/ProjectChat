@@ -72,7 +72,7 @@ int main()
 
 							for (int i = 0; i < vectorUser[ptr_entrance->getIndex()].number_of_messages(); i++)
 							{
-
+								vectorUser[ptr_entrance->getIndex()].receiving_a_letter(vectorUser, ptr_entrance->getIndex(), сhoice);
 							}
 
 							std::cout << "" << std::endl;
@@ -102,15 +102,18 @@ int main()
 									continue;
 								}
 								
+								std::cout << "Напишите сообщение: " << std::endl;
+								std::cin >> xxx;
 
-									
+								vectorUser[ptr_entrance->getIndex()].addMessage(xxx, сhoice);
 
-
+								std::cout << "Сообщение отправлено!" << std::endl;
 								
 								break;
 
 							} while (true);
 
+							continue;
 
 						case 0:
 							break;
