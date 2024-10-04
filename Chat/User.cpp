@@ -2,8 +2,6 @@
 #include <iostream>
 #include <vector>
 
-
-
 User::User(std::string login) : _login(login)
 {
 	std::cout << "Ââåäèòå ïàðîëü: " << std::endl;
@@ -55,17 +53,23 @@ void User::addFriends(std::string surname, std::string name, int a)
 {
 	friends.push_back(Friends(name, surname, a));
 };
-
 size_t User::getSizeFriends()
 {
 	return friends.size();
 };
-
 void User::getFriends()
 {
 	for (int i = 0; i < friends.size(); i++)
 	{
 		std::cout <<friends[i].getName() << " " << friends[i].getSurName() << std::endl;
+	}
+};
+
+void User::getFriendsMesssage()
+{
+	for (int i = 0; i < friends.size(); i++)
+	{
+		std::cout << i << ") " << friends[i].getName() << " " << friends[i].getSurName() << std::endl;
 	}
 };
 
@@ -81,7 +85,6 @@ bool User::checking_for_friends(std::vector <User>& other, int ñhoice)
 	}
 	return true;
 };
-
 bool User::checking_for_friends_to_add(int ñhoice)
 {
 	for (int i = 0; i < friends.size(); i++)
@@ -94,8 +97,9 @@ bool User::checking_for_friends_to_add(int ñhoice)
 	return true;
 };
 
-void User::number_of_messages()
+
+int User::number_of_messages()
 {
-	std::cout << "(Ó âàñ "<< messageUser.size() << " ñîîáùåíèé)" << std::endl;
+	return messageUser.size();
 };
 

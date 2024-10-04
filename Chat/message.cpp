@@ -1,11 +1,25 @@
 #include "Message.h"
 
-Message::Message() 
+Message::Message(int index, std::string message):_message(message), _index(index) {};
+
+int Message::getIndex()
 {
-	
+	return _index;
 };
 
-void Message::getAddressee()
+std::string Message::getMessage()
+{
+	return _message;
+};
+
+void Message::creatMessage(std::strin ) 
 {
 
 };
+
+
+
+//void Message::openMessage()
+//{
+//
+//};

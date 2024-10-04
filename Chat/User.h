@@ -42,7 +42,8 @@ public:
 	bool checking_for_friends_to_add(int ñhoice);
 
 
-	void number_of_messages();
+	int number_of_messages();
+	void getFriendsMesssage();
 	//void viewing_messages();
 	
 

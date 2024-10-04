@@ -58,7 +58,7 @@ int main()
 
 					while (true) 
 					{
-						std::cout << "1) Входящие сообщения"; vectorUser[ptr_entrance->getIndex()].number_of_messages();
+						std::cout << "1) Входящие сообщения (У вас " << vectorUser[ptr_entrance->getIndex()].number_of_messages() << " сообщений)" << std::endl;
 						std::cout << "2) Написать сообщение" << std::endl;
 						std::cout << "0) Вернуться назад" << std::endl;
 
@@ -68,18 +68,48 @@ int main()
 						{
 						case 1:
 
+							std::cout << "У вас "<< vectorUser[ptr_entrance->getIndex()].number_of_messages() <<  " не прочитанных cообщений:" << std::endl;
+
+							for (int i = 0; i < vectorUser[ptr_entrance->getIndex()].number_of_messages(); i++)
+							{
+
+							}
+
+							std::cout << "" << std::endl;
+							std::cin >> сhoice;
+
 
 
 						case 2:
-							std::cout << "Кому вы хотите написать сообщение:" << std::endl;
 							
 							if (vectorUser[ptr_entrance->getIndex()].getSizeFriends() == 0)
 							{
 								std::cout << "Пока что писать некому, добавьте друзей!" << std::endl;
 								continue;
 							}
-							/*vectorUser[ptr_entrance->getIndex()].getFriends(User);*/
 
+							std::cout << "Кому вы хотите написать сообщение: " << std::endl;
+
+							vectorUser[ptr_entrance->getIndex()].getFriendsMesssage();
+							
+							do
+							{
+								std::cin >> сhoice;
+
+								if (vectorUser[ptr_entrance->getIndex()].getSizeFriends() < сhoice || сhoice < 0)
+								{
+									std::cout << "Выберите из существующих!" << std::endl;
+									continue;
+								}
+								
+
+									
+
+
+								
+								break;
+
+							} while (true);
 
 
 						case 0:

@@ -1,7 +1,68 @@
 ﻿  Entrance.cpp
+K:\С++\ProjectChat\Chat\Message.h(20,33): error C2065: User: необъявленный идентификатор
+  (компиляция исходного файла "Entrance.cpp")
+  
+K:\С++\ProjectChat\Chat\Message.h(20,25): error C2923: std::vector: "User" не является допустимым аргументом типа шаблон для параметра "_Ty"
+  (компиляция исходного файла "Entrance.cpp")
+      K:\С++\ProjectChat\Chat\Message.h(20,33):
+       см. объявление "User"
+  
+K:\С++\ProjectChat\Chat\Message.h(20,25): error C2976: std::vector: слишком мало аргументов шаблон
+  (компиляция исходного файла "Entrance.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(429,7):
+       см. объявление "std::vector"
+  
   Friends.cpp
   main.cpp
+K:\С++\ProjectChat\Chat\Message.h(20,33): error C2065: User: необъявленный идентификатор
+  (компиляция исходного файла "main.cpp")
+  
+K:\С++\ProjectChat\Chat\Message.h(20,25): error C2923: std::vector: "User" не является допустимым аргументом типа шаблон для параметра "_Ty"
+  (компиляция исходного файла "main.cpp")
+      K:\С++\ProjectChat\Chat\Message.h(20,33):
+       см. объявление "User"
+  
+K:\С++\ProjectChat\Chat\Message.h(20,25): error C2976: std::vector: слишком мало аргументов шаблон
+  (компиляция исходного файла "main.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(429,7):
+       см. объявление "std::vector"
+  
   message.cpp
+K:\С++\ProjectChat\Chat\User.h(17,15): error C2065: Message: необъявленный идентификатор
+  (компиляция исходного файла "message.cpp")
+  
+K:\С++\ProjectChat\Chat\User.h(17,7): error C2923: std::vector: "Message" не является допустимым аргументом типа шаблон для параметра "_Ty"
+  (компиляция исходного файла "message.cpp")
+      K:\С++\ProjectChat\Chat\User.h(17,15):
+       см. объявление "Message"
+  
+K:\С++\ProjectChat\Chat\User.h(17,7): error C2976: std::vector: слишком мало аргументов шаблон
+  (компиляция исходного файла "message.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(429,7):
+       см. объявление "std::vector"
+  
+K:\С++\ProjectChat\Chat\message.cpp(15,33): error C2039: "strin": не является членом "std".
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(29,1):
+       см. объявление "std"
+  
+K:\С++\ProjectChat\Chat\message.cpp(15,15): error C2761: "void Message::creatMessage(std::vector<User,std::allocator<User>> &)": повторное объявление члена запрещено.
+K:\С++\ProjectChat\Chat\message.cpp(15,33): error C2065: strin: необъявленный идентификатор
+K:\С++\ProjectChat\Chat\message.cpp(16,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "{"
+K:\С++\ProjectChat\Chat\message.cpp(18,1): error C2059: синтаксическая ошибка: }
+K:\С++\ProjectChat\Chat\message.cpp(18,1): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
   User.cpp
+K:\С++\ProjectChat\Chat\Message.h(20,33): error C2065: User: необъявленный идентификатор
+  (компиляция исходного файла "User.cpp")
+  
+K:\С++\ProjectChat\Chat\Message.h(20,25): error C2923: std::vector: "User" не является допустимым аргументом типа шаблон для параметра "_Ty"
+  (компиляция исходного файла "User.cpp")
+      K:\С++\ProjectChat\Chat\Message.h(20,33):
+       см. объявление "User"
+  
+K:\С++\ProjectChat\Chat\Message.h(20,25): error C2976: std::vector: слишком мало аргументов шаблон
+  (компиляция исходного файла "User.cpp")
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\vector(429,7):
+       см. объявление "std::vector"
+  
+K:\С++\ProjectChat\Chat\User.cpp(103,25): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
   Создание кода...
-  Chat.vcxproj -> K:\С++\ProjectChat\x64\Debug\Chat.exe
