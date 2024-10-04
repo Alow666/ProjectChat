@@ -1,15 +1,23 @@
-#pragma once
-#include <iostream>
-#include <vector>
-
-
-struct Message
-{
-	int _index;
-	std::string _message;
-
-};
-
-
-
-
+//#pragma once
+//#include <iostream>
+//#include <vector>
+//
+//
+//class Message
+//{
+//private:
+//
+//	int _index;
+//	std::string _message;
+//
+//public:
+//
+//	Message();
+//	~Message() = default;
+//
+//	void getAddressee();
+//};
+//
+//
+//
+//

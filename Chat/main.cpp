@@ -56,41 +56,41 @@ int main()
 				{
 				case 1:
 
-					while (true) 
-					{
-						std::cout << "1) Входящие сообщения"; vectorUser[ptr_entrance->getIndex()].number_of_messages();
-						std::cout << "2) Написать сообщение" << std::endl;
-						std::cout << "0) Вернуться назад" << std::endl;
+					//while (true) 
+					//{
+					//	std::cout << "1) Входящие сообщения"; vectorUser[ptr_entrance->getIndex()].number_of_messages();
+					//	std::cout << "2) Написать сообщение" << std::endl;
+					//	std::cout << "0) Вернуться назад" << std::endl;
 
-						std::cin >> сhoice;
+					//	std::cin >> сhoice;
 
-						switch (сhoice)
-						{
-						case 1:
-
-
-
-						case 2:
-							std::cout << "Кому вы хотите написать сообщение:" << std::endl;
-							
-							if (vectorUser[ptr_entrance->getIndex()].getSizeFriends() == 0)
-							{
-								std::cout << "Пока что писать некому, добавьте друзей!" << std::endl;
-								continue;
-							}
-							
+					//	switch (сhoice)
+					//	{
+					//	case 1:
 
 
 
-						case 0:
-							break;
-						default:
-							std::cout << "Выберите что то из списка !" << std::endl;
-							continue;
-						}
-						break;
-					}
-					continue;
+					//	case 2:
+					//		std::cout << "Кому вы хотите написать сообщение:" << std::endl;
+					//		
+					//		if (vectorUser[ptr_entrance->getIndex()].getSizeFriends() == 0)
+					//		{
+					//			std::cout << "Пока что писать некому, добавьте друзей!" << std::endl;
+					//			continue;
+					//		}
+					//		/*vectorUser[ptr_entrance->getIndex()].getFriends(User);*/
+
+
+
+					//	case 0:
+					//		break;
+					//	default:
+					//		std::cout << "Выберите что то из списка !" << std::endl;
+					//		continue;
+					//	}
+					//	break;
+					//}
+					//continue;
 
 				case 2:
 
@@ -104,7 +104,7 @@ int main()
 
 						switch (сhoice)
 						{
-						case 1:
+						case 1://+++++
 							std::cout << "Ваши друзья:" << std::endl;
 
 							if (vectorUser[ptr_entrance->getIndex()].getSizeFriends() == 0)
@@ -114,7 +114,7 @@ int main()
 							}
 							if (vectorUser[ptr_entrance->getIndex()].getSizeFriends() > 0)
 							{
-								vectorUser[ptr_entrance->getIndex()].getFriends(vectorUser);
+								vectorUser[ptr_entrance->getIndex()].getFriends();
 								continue;
 							}
 
@@ -125,10 +125,15 @@ int main()
 
 							for (; сhoice < vectorUser.size(); сhoice++)
 							{
-
+							
 								if (ptr_entrance->getIndex() == сhoice)
 								{
 									std::cout << сhoice << ") " << vectorUser[сhoice].getName() << " " << vectorUser[сhoice].getSurname() << " <- Это вы" << std::endl;
+								};
+								
+								if (false == vectorUser[ptr_entrance->getIndex()].checking_for_friends(vectorUser, сhoice))
+								{
+									continue;
 								};
 
 								if (ptr_entrance->getIndex() != сhoice)
@@ -138,13 +143,13 @@ int main()
 
 							}
 
-							std::cout << "Выберите кого добавить в друзья" << std::endl;
+							std::cout << "Выберите кого добавить в друзья: " << std::endl;
 
 							do
 							{
 								std::cin >> сhoice;
 
-								if (vectorUser.size() < сhoice)
+								if (vectorUser.size() < сhoice || сhoice < 0)
 								{
 									std::cout << "Выберите из существующих!" << std::endl;
 									continue;
@@ -155,10 +160,17 @@ int main()
 									std::cout << "Вы не можете добавить себя!" << std::endl;
 									break;
 								}
+								
+								if (false == vectorUser[ptr_entrance->getIndex()].checking_for_friends(vectorUser, сhoice))
+								{
+									std::cout << "Данный пользователь уже в друзьях" << std::endl;
+									break;
+								};
+
 
 								if (ptr_entrance->getIndex() != сhoice)
 								{
-									vectorUser[ptr_entrance->getIndex()].addFriends(сhoice);
+									vectorUser[ptr_entrance->getIndex()].addFriends(vectorUser[сhoice].getName(), vectorUser[сhoice].getSurname(), сhoice);
 									std::cout << "Вы добавили" << vectorUser[сhoice].getName() << " " << vectorUser[сhoice].getSurname() << " в друзья" << std::endl;
 									break;
 								}

@@ -31,6 +31,8 @@ std::string User::getSurname()
 {
 	return _surname;
 }
+
+
  void User::setLogin(std::string login)
 {
 	_login = login ;
@@ -47,9 +49,11 @@ void User::setSurname(std::string surname)
 {
 	_surname = surname;
 }
-void User::addFriends(int b)
+
+
+void User::addFriends(std::string surname, std::string name, int a)
 {
-	friends.push_back(b);
+	friends.push_back(Friends(name, surname, a));
 };
 
 size_t User::getSizeFriends()
@@ -57,38 +61,41 @@ size_t User::getSizeFriends()
 	return friends.size();
 };
 
-void User::getFriends(std::vector<User>& other)
+void User::getFriends()
 {
 	for (int i = 0; i < friends.size(); i++)
 	{
-		std::cout << other[friends[i]].getName() << " " << other[friends[i]].getSurname() << std::endl;
+		std::cout <<friends[i].getName() << " " << friends[i].getSurName() << std::endl;
 	}
 };
 
-void User::number_of_messages()
+bool User::checking_for_friends(std::vector <User>& other, int ñhoice)
 {
-	std::cout << "(Ó âàñ "<< message.size() << " ñîîáùåíèé)" << std::endl;
+	for (int i = 0; i < friends.size(); i++)
+	{
+		if (ñhoice == friends[i].getIndex())
+		{
+			std::cout << ñhoice << ") " << other[ñhoice].getName() << " " << other[ñhoice].getSurname() << " <- Ó âàñ â äðóçüÿõ" << std::endl;
+			return false;
+		};
+	}
+	return true;
 };
 
-void User::viewing_messages() 
+bool User::checking_for_friends_to_add(int ñhoice)
 {
-
+	for (int i = 0; i < friends.size(); i++)
+	{
+		if (ñhoice == friends[i].getIndex())
+		{
+			return false;
+		};
+	}
+	return true;
 };
 
-void User::addMessage(std::string text)
-{
-	messageUser.push_back(Message());
-
-};
-
-//
-//std::string creatMassage()
+//void User::number_of_messages()
 //{
-//	
-//
+//	std::cout << "(Ó âàñ "<< messageUser.size() << " ñîîáùåíèé)" << std::endl;
 //};
-//
-//std::string friends_for_correspondence() 
-//{
-//
-//};
+
