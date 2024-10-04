@@ -24,12 +24,18 @@
     <ClCompile Include="Entrance.cpp">
       <Filter>Файлы заголовков</Filter>
     </ClCompile>
+    <ClCompile Include="message.cpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="User.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
     <ClInclude Include="Entrance.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="Message.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>

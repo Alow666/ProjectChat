@@ -64,3 +64,31 @@ void User::getFriends(std::vector<User>& other)
 		std::cout << other[friends[i]].getName() << " " << other[friends[i]].getSurname() << std::endl;
 	}
 };
+
+void User::number_of_messages()
+{
+	std::cout << "(У вас "<< message.size() << " сообщений)" << std::endl;
+};
+
+void User::viewing_messages() 
+{
+
+};
+
+void User::addMessage(std::string text)
+{
+	messageUser.push_back(Message());
+
+};
+
+//
+//std::string creatMassage()
+//{
+//	
+//
+//};
+//
+//std::string friends_for_correspondence() 
+//{
+//
+//};

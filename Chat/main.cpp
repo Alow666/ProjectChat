@@ -56,28 +56,44 @@ int main()
 				{
 				case 1:
 
-					/*std::cout << "1) Мои друзья" << std::endl;
-					std::cout << "2) Поиск людей" << std::endl;
-					std::cout << "0) Вернуться назад" << std::endl;
-
-					std::cin >> choice3;
-
-					switch (choice3)
+					while (true) 
 					{
-					case 1:
+						std::cout << "1) Входящие сообщения"; vectorUser[ptr_entrance->getIndex()].number_of_messages();
+						std::cout << "2) Написать сообщение" << std::endl;
+						std::cout << "0) Вернуться назад" << std::endl;
 
-					case 2:
+						std::cin >> сhoice;
 
-					case 0:
+						switch (сhoice)
+						{
+						case 1:
+
+
+
+						case 2:
+							std::cout << "Кому вы хотите написать сообщение:" << std::endl;
+							
+							if (vectorUser[ptr_entrance->getIndex()].getSizeFriends() == 0)
+							{
+								std::cout << "Пока что писать некому, добавьте друзей!" << std::endl;
+								continue;
+							}
+							
+
+
+
+						case 0:
+							break;
+						default:
+							std::cout << "Выберите что то из списка !" << std::endl;
+							continue;
+						}
 						break;
-					default:
-						std::cout << "Выберите что то из списка !" << std::endl;
-						continue;
-					}*/
-					
+					}
 					continue;
 
 				case 2:
+
 					while (true)
 					{
 						std::cout << "\n1) Мои друзья" << std::endl;
@@ -166,6 +182,7 @@ int main()
 					continue;
 
 				case 3: // Настройка аккаунта
+
 					while (true)
 					{
 						std::cout << "\n1) Изменить логин" << std::endl;
@@ -238,7 +255,7 @@ int main()
 						break;
 					}
 					continue;
-					//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 				case 0:
 
 					std::cout << "До скорой встречи!)" << std::endl;

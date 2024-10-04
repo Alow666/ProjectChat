@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include "Message.h"
+
 
 
 class User
@@ -11,7 +13,7 @@ private:
 	std::string _login;
 	std::string _name;
 	std::string _surname;
-	std::vector <std::string> message;
+	std::vector <Message> messageUser;
 	std::vector <int> friends;
 
 public:
@@ -31,6 +33,15 @@ public:
 	void addFriends(int b);
 	size_t getSizeFriends();
 	void getFriends(std::vector<User>& other);
-	
+
+	void number_of_messages();
+	void addMessage(std::string text);
+
+
+
+	void viewing_messages();
+	/*std::string creatMassage();*/
+
+	//std::string friends_for_correspondence();
 };
 
