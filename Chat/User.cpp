@@ -94,8 +94,8 @@ bool User::checking_for_friends_to_add(int сhoice)
 	return true;
 };
 
-//void User::number_of_messages()
-//{
-//	std::cout << "(У вас "<< messageUser.size() << " сообщений)" << std::endl;
-//};
+void User::number_of_messages()
+{
+	std::cout << "(У вас "<< messageUser.size() << " сообщений)" << std::endl;
+};
 

@@ -1,11 +1,11 @@
-//#include "Message.h"
-//
-//Message::Message() 
-//{
-//	
-//};
-//
-//void Message::getAddressee()
-//{
-//
-//};
+#include "Message.h"
+
+Message::Message() 
+{
+	
+};
+
+void Message::getAddressee()
+{
+
+};

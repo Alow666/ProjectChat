@@ -1,5 +1,7 @@
 ﻿  Entrance.cpp
-  User.cpp
+  Friends.cpp
   main.cpp
+  message.cpp
+  User.cpp
   Создание кода...
   Chat.vcxproj -> K:\С++\ProjectChat\x64\Debug\Chat.exe

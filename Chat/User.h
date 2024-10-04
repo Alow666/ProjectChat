@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
-//#include "Message.h"
+#include "Message.h"
 #include "Friends.h"
 
 
@@ -14,7 +14,7 @@ private:
 	std::string _login;
 	std::string _name;
 	std::string _surname;
-	/*std::vector <Message> messageUser;*/
+	std::vector <Message> messageUser;
 	std::vector <Friends> friends;
 	int index;
 
@@ -42,7 +42,7 @@ public:
 	bool checking_for_friends_to_add(int ñhoice);
 
 
-	//void number_of_messages();
+	void number_of_messages();
 	//void viewing_messages();
 	
 
