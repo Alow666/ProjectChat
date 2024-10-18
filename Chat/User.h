@@ -1,9 +1,9 @@
 #pragma once
 #include <iostream>
 #include <vector>
-#include "Message.h"
 #include "Friends.h"
-#include "Entrance.h"
+#include "Message.h"
+
 
 
 
@@ -15,9 +15,9 @@ private:
 	std::string _login;
 	std::string _name;
 	std::string _surname;
-	std::vector <Message> messageUser;
-	std::vector <Friends> friends;
-	int index;
+	std::vector <Friends> _friends;
+	std::vector <Message> _chat;
+	
 
 public:
 
@@ -41,15 +41,15 @@ public:
 	std::string getInfoFriends(int index);
 	bool checking_for_friends(std::vector <User>& other, int ñhoice);
 	bool checking_for_friends_to_add(int ñhoice);
+	int getIndexFriens(int a);
 
-
-	int number_of_messages();
+	void createMessage(int sender, std::string text);
+	void sendMessage(std::vector <User>& other, int sender, int index, std::string text);
+	size_t getSizeChat();
+	int getIndexMessage(int a);
+	std::string getTextMessage(int a);
 	void getFriendsMesssage();
-	void addMessage(std::string text, int choice);
-	
-	std::string receiving_a_letter(std::vector <User>& other, int indexEntrance, int indexFriend);
-	
+	void clearMessage();
 
-	
 };
 
