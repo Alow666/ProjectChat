@@ -98,16 +98,49 @@ bool User::checking_for_friends_to_add(int сhoice)
 };
 
 
-int User::number_of_messages()
+size_t User::number_of_messages()
 {
 	return messageUser.size();
 };
-void User::addMessage(std::string text, int choice)
+void User::addFirstMessage(std::vector <User>& other, std::string text, int choice, int a)
 {
-	messageUser.push_back(Message(choice, text));
+	other[friends[choice].getIndex()].messageUser.push_back(Message(a, text, choice));
 };
-std::string User::receiving_a_letter(std::vector <User>& other, int indexEntrance, int indexFriend)
+int User::message_counter(int b)
 {
-	std::cout << other[indexEntrance].getInfoFriends(indexFriend) << "написал вам сообщение" << std::endl;
-	
+	int a = 0;
+
+	for (int i = 0; i < messageUser.size(); i++)
+	{
+		if(messageUser[b].fromWhom() == messageUser[i].fromWhom())
+		{
+			++a;
+		}
+	}
+
+	return a;
+};
+void User::receiving_a_letter(std::vector <User>& other, int indexEntrance)
+{
+	for (int i = 0; i < friends.size(); i++)
+	{
+		std::cout << i << ") " << other[friends[i].getIndex()].getName() << " " << other[friends[i].getIndex()].getSurname() << " " << other[indexEntrance].message_counter(i) << " сообщения." << std::endl;
+	}
+};
+
+
+
+void User::chat(std::vector <User>& other, int choice, int indexEntrance)
+{
+	for (int i = 0; i < messageUser.size(); i++)
+	{
+		if (messageUser[i].toWhom() == choice && messageUser[i].fromWhom() == indexEntrance)
+		{
+			std::cout << "Вы: " << messageUser[i].getMessage() << std::endl;
+		}
+		if (other[friends[choice].getIndex()].messageUser[i].fromWhom() == choice && other[friends[choice].getIndex()].messageUser[i].toWhom() == indexEntrance)
+		{
+			std::cout << other[messageUser[i].fromWhom()].getName() << ": " << messageUser[i].getMessage() << std::endl;
+		}
+	}
 };

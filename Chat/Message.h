@@ -1,22 +1,25 @@
 #pragma once
 #include <iostream>
-#include "User.h"
-
+#include <vector>
 
 class Message
 {
 private:
 
-	int _index;
-	std::string _message;
+	int _from_whom;// от кого
+	std::vector <std::string> _message;
+	int _to_whom; // кому
 
 public:
 
-	Message(int index, std::string message);
+	Message(int from_whom, int to_whom);
 	~Message() = default;
 
-	int getIndex();
-	std::string getMessage();
+	void addMessageClass();
+
+	int fromWhom();
+	int toWhom();
+	
 	
 
 	
