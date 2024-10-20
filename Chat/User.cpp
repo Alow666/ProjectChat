@@ -98,7 +98,7 @@ void User::createMessage(int sender, std::string& text)
 	_chat.push_back(Message(sender, text));
 };
 
-void User::sendMessage(std::vector <User>& other, int sender, int index, std::string text)
+void User::sendMessage(std::vector <User>& other, int sender, int index, std::string& text)
 {
 	other[index].createMessage(sender, text);
 };

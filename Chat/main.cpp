@@ -6,14 +6,6 @@
 #include "Entrance.h"
 #include "GeneralChat.h"
 
-//std::string& TEXT()
-//{
-//	std::string text;
-//	std::getline(std::cin, text);
-//	return text;
-//};
-
-
 
 int main()
 {
@@ -34,6 +26,7 @@ int main()
 		switch (сhoice)
 	{
 		case 1:
+
 			if (vectorUser.size() == 0)//Проверка наличия пользователей
 			{
 				std::cout << "В чате еще никого нету(" << std::endl;
@@ -50,8 +43,6 @@ int main()
 			permission_to_enter = ptr_entrance->entrancePassword(vectorUser);//проверка пароля
 
 			if (permission_to_enter == true) std::cout << "Добро пожаловать " << vectorUser[ptr_entrance->getIndex()].getName()<< std::endl; 
-
-			
 
 			while (permission_to_enter) // Управление учеткой 
 			{
@@ -117,7 +108,7 @@ int main()
 								
 								std::cout << "\nНапишите сообщение:" << std::endl;
 								std::cin >> xxx;
-
+								std::getline(std::cin, xxx);
 								vectorUser[ptr_entrance->getIndex()].sendMessage(vectorUser, ptr_entrance->getIndex(), vectorUser[ptr_entrance->getIndex()].getIndexFriens(сhoice), xxx);
 					
 

@@ -44,7 +44,7 @@ public:
 	int getIndexFriens(int a);
 
 	void createMessage(int sender, std::string& text);
-	void sendMessage(std::vector <User>& other, int sender, int index, std::string text);
+	void sendMessage(std::vector <User>& other, int sender, int index, std::string& text);
 	size_t getSizeChat();
 	int getIndexMessage(int a);
 	std::string getTextMessage(int a);

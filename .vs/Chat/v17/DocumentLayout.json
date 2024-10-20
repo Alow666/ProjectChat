@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "Chat\\main.cpp",
               "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\main.cpp",
               "RelativeToolTip": "Chat\\main.cpp",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAAAI4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-17T07:49:13.884Z",
               "IsPinned": true,
@@ -68,7 +68,7 @@
               "RelativeDocumentMoniker": "Chat\\User.cpp",
               "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\User.cpp",
               "RelativeToolTip": "Chat\\User.cpp",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAvwGEAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAIwF8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-17T07:54:32.523Z",
               "EditorCaption": ""
@@ -83,8 +83,7 @@
               "RelativeToolTip": "Chat\\GeneralChat.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-18T09:43:36.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T09:43:36.393Z"
             },
             {
               "$type": "Document",
@@ -96,8 +95,7 @@
               "RelativeToolTip": "Chat\\GeneralChat.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-18T09:43:49.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T09:43:49.544Z"
             }
           ]
         }
