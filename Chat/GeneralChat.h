@@ -14,8 +14,8 @@ public:
 	GeneralChat() = default;
 	~GeneralChat() = default;
 
-	void addMessage(std::string text, int index);
-	int getSize();
+	void addMessage(std::string& text, int index);
+	size_t getSize();
 	int getIndex(int index);
 	std::string getText(int index);
 

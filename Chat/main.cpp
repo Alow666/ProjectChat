@@ -1,9 +1,18 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
 #include "User.h"
 #include "Entrance.h"
 #include "GeneralChat.h"
+
+//std::string& TEXT()
+//{
+//	std::string text;
+//	std::getline(std::cin, text);
+//	return text;
+//};
+
 
 
 int main()
@@ -134,7 +143,7 @@ int main()
 
 								std::cin >> ñhoice;
 
-								if (2 < ñhoice || ñhoice < 0)
+								if (1 < ñhoice || ñhoice < 0)
 								{
 									std::cout << "\nÂûáåðèòå èç ñóùåñòâóþùèõ!" << std::endl;
 									continue;
@@ -143,7 +152,9 @@ int main()
 
 								std::cout << "\nÍàïèøèòå ñîîáùåíèå:" << std::endl;
 								std::cin >> xxx;
+								std::getline(std::cin, xxx);
 								ptr_GChat->addMessage(xxx, ptr_entrance->getIndex());
+								
 							}
 							continue;
 						case 0:

@@ -93,7 +93,7 @@ int User::getIndexFriens(int a)
 	return _friends[a].getIndex();
 };
 
-void User::createMessage(int sender, std::string text)
+void User::createMessage(int sender, std::string& text)
 {
 	_chat.push_back(Message(sender, text));
 };
