@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <Windows.h>
 
 #include "User.h"
 #include "Entrance.h"
@@ -9,6 +10,9 @@
 
 int main()
 {
+	/*SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	std::system("chcp 1251");*/
 	setlocale(LC_ALL, "Rus");
 	int сhoice;
 	bool permission_to_enter = false;
@@ -20,7 +24,7 @@ int main()
 
 	while (true)
 	{
-		std::cout << "1)Войти в аккаунт \n2)Зарегистрировать аккаунт \n3)Выйти" << std::endl;
+		std::cout << "\n1)Войти в аккаунт \n2)Зарегистрировать аккаунт \n3)Выйти" << std::endl;
 		std::cin >> сhoice;
 
 		switch (сhoice)
@@ -29,7 +33,7 @@ int main()
 
 			if (vectorUser.size() == 0)//Проверка наличия пользователей
 			{
-				std::cout << "В чате еще никого нету(" << std::endl;
+				std::cout << "\nВ чате еще никого нету(" << std::endl;
 				continue;
 			}
 
@@ -42,7 +46,7 @@ int main()
 
 			permission_to_enter = ptr_entrance->entrancePassword(vectorUser);//проверка пароля
 
-			if (permission_to_enter == true) std::cout << "Добро пожаловать " << vectorUser[ptr_entrance->getIndex()].getName()<< std::endl; 
+			if (permission_to_enter == true) std::cout << "\nДобро пожаловать " << vectorUser[ptr_entrance->getIndex()].getName()<< std::endl; 
 
 			while (permission_to_enter) // Управление учеткой 
 			{
@@ -84,6 +88,7 @@ int main()
 							vectorUser[ptr_entrance->getIndex()].clearMessage();
 
 							continue;
+
 						case 2:
 							
 							if (vectorUser[ptr_entrance->getIndex()].getSizeFriends() == 0)
@@ -91,11 +96,11 @@ int main()
 								std::cout << "\nНеобходимо добавить друзей!" << std::endl;
 								continue;
 							}
+							
+							std::cout << "\nКому вы хотите написать ?: " << std::endl;
 
 							vectorUser[ptr_entrance->getIndex()].getFriendsMesssage();
 
-							std::cout << "\nКому вы хотите написать ?: " << std::endl;
-							
 							do
 							{
 								std::cin >> сhoice;
@@ -107,11 +112,12 @@ int main()
 								}
 								
 								std::cout << "\nНапишите сообщение:" << std::endl;
+
 								std::cin >> xxx;
 								std::getline(std::cin, xxx);
+
 								vectorUser[ptr_entrance->getIndex()].sendMessage(vectorUser, ptr_entrance->getIndex(), vectorUser[ptr_entrance->getIndex()].getIndexFriens(сhoice), xxx);
 					
-
 								std::cout << "\nСообщение отправлено!" << std::endl;
 								
 								break;
@@ -124,14 +130,12 @@ int main()
 
 							while (true) 
 							{
-
-								std::cout << "\n";
 								for (int i = 0; i < ptr_GChat->getSize(); i++)
 								{
 									std::cout << vectorUser[ptr_GChat->getIndex(i)].getName() << " --> " << ptr_GChat->getText(i) << std::endl;
 								}
-								std::cout << "\n1) Написать сообщение \n0) Выйти" << std::endl;
 
+								std::cout << "\n1) Написать сообщение \n0) Выйти" << std::endl;
 								std::cin >> сhoice;
 
 								if (1 < сhoice || сhoice < 0)
@@ -139,23 +143,33 @@ int main()
 									std::cout << "\nВыберите из существующих!" << std::endl;
 									continue;
 								};
+
 								if (сhoice == 0) break;
 
 								std::cout << "\nНапишите сообщение:" << std::endl;
 								std::cin >> xxx;
 								std::getline(std::cin, xxx);
+
 								ptr_GChat->addMessage(xxx, ptr_entrance->getIndex());
-								
+
+								std::cout << "\n";						
 							}
+
 							continue;
+
 						case 0:
+
 							break;
+
 						default:
+
 							std::cout << "\nВыберите что то из списка !" << std::endl;
 							continue;
 						}
+
 						break;
 					}
+
 					continue;
 
 				case 2:
@@ -171,6 +185,7 @@ int main()
 						switch (сhoice)
 						{
 						case 1://+++++
+
 							std::cout << "\nВаши друзья:" << std::endl;
 
 							if (vectorUser[ptr_entrance->getIndex()].getSizeFriends() == 0)
@@ -178,6 +193,7 @@ int main()
 								std::cout << "\nУ вас пока что нету друзей(" << std::endl;
 								continue;
 							}
+
 							if (vectorUser[ptr_entrance->getIndex()].getSizeFriends() > 0)
 							{
 								vectorUser[ptr_entrance->getIndex()].getFriends();
@@ -240,6 +256,7 @@ int main()
 									std::cout << "\nВы добавили " << vectorUser[сhoice].getName() << " " << vectorUser[сhoice].getSurname() << " в друзья" << std::endl;
 									break;
 								}
+
 								break;
 
 							} while (true);
@@ -279,6 +296,7 @@ int main()
 							{
 								std::cout << "\nВведите новый логин: " << std::endl;
 								std::cin >> xxx;
+
 								int i = 0;
 								do
 								{
@@ -293,7 +311,9 @@ int main()
 								} while (i < vectorUser.size());
 
 								vectorUser[ptr_entrance->getIndex()].setLogin(xxx);
+
 								std::cout << "\nЛогин успешно изменен!" << std::endl;
+
 								break;
 							}
 							continue;
@@ -302,7 +322,9 @@ int main()
 
 							std::cout << "\nВведите новый пароль: " << std::endl;
 							std::cin >> xxx;
+
 							vectorUser[ptr_entrance->getIndex()].setPassword(xxx);
+
 							std::cout << "\nПароль успешно изменен!" << std::endl;
 							continue;
 
@@ -310,7 +332,9 @@ int main()
 
 							std::cout << "\nВведите новое Имя: " << std::endl;
 							std::cin >> xxx;
+
 							vectorUser[ptr_entrance->getIndex()].setName(xxx);
+
 							std::cout << "\nИмя успешно изменено!" << std::endl;
 							continue;
 
@@ -318,7 +342,9 @@ int main()
 
 							std::cout << "\nВведите новую фамилию: " << std::endl;
 							std::cin >> xxx;
+
 							vectorUser[ptr_entrance->getIndex()].setSurname(xxx);
+
 							std::cout << "\nФамилия успешно изменена!" << std::endl;
 							continue;
 
@@ -327,11 +353,14 @@ int main()
 							break;
 
 						default:
+
 							std::cout << "\nВыберите что то из списка !" << std::endl;
 							continue;
 						}
+
 						break;
 					}
+
 					continue;
 
 				case 0:
@@ -341,9 +370,9 @@ int main()
 					break;
 
 				default:
+
 					std::cout << "\nВыберите что то из списка !" << std::endl;
 					continue;
-
 				}
 			}
 			continue;

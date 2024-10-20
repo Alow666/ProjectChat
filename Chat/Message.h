@@ -16,7 +16,6 @@ public:
 	int getSender();
 	std::string getMessage();
 	~Message() = default;
-
 };
 
 

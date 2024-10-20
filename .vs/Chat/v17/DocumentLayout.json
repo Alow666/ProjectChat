@@ -7,20 +7,8 @@
       "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\GeneralChat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\GeneralChat.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\GeneralChat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\GeneralChat.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\Entrance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9C49FF03-E6F2-4A05-B3FA-F00EF84E5BFA}|Chat\\Chat.vcxproj|solutionrelative:Chat\\Entrance.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,7 +28,7 @@
               "RelativeDocumentMoniker": "Chat\\main.cpp",
               "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\main.cpp",
               "RelativeToolTip": "Chat\\main.cpp",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-17T07:49:13.884Z",
               "IsPinned": true,
@@ -49,53 +37,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "User.h",
-              "DocumentMoniker": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\User.h",
-              "RelativeDocumentMoniker": "Chat\\User.h",
-              "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\User.h",
-              "RelativeToolTip": "Chat\\User.h",
-              "ViewState": "AgIAABYAAAAAAAAAAAAwwCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-04T06:38:58.272Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "User.cpp",
-              "DocumentMoniker": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\User.cpp",
-              "RelativeDocumentMoniker": "Chat\\User.cpp",
-              "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\User.cpp",
-              "RelativeToolTip": "Chat\\User.cpp",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAIwF8AAAAYAAAAAAAAAA==",
+              "Title": "Entrance.cpp",
+              "DocumentMoniker": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\Entrance.cpp",
+              "RelativeDocumentMoniker": "Chat\\Entrance.cpp",
+              "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\Entrance.cpp",
+              "RelativeToolTip": "Chat\\Entrance.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-17T07:54:32.523Z",
+              "WhenOpened": "2024-10-20T08:31:56.73Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GeneralChat.h",
-              "DocumentMoniker": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\GeneralChat.h",
-              "RelativeDocumentMoniker": "Chat\\GeneralChat.h",
-              "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\GeneralChat.h",
-              "RelativeToolTip": "Chat\\GeneralChat.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-18T09:43:36.393Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GeneralChat.cpp",
-              "DocumentMoniker": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\GeneralChat.cpp",
-              "RelativeDocumentMoniker": "Chat\\GeneralChat.cpp",
-              "ToolTip": "K:\\\u0421\u002B\u002B\\ProjectChat\\Chat\\GeneralChat.cpp",
-              "RelativeToolTip": "Chat\\GeneralChat.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-18T09:43:49.544Z"
             }
           ]
         }

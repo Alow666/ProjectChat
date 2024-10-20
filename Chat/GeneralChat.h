@@ -18,8 +18,6 @@ public:
 	size_t getSize();
 	int getIndex(int index);
 	std::string getText(int index);
-
-
 };
 
 

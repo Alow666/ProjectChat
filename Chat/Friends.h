@@ -17,5 +17,4 @@ public:
 	std::string getName();
 	std::string getSurName();
 	int getIndex();
-
 };

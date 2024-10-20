@@ -14,50 +14,57 @@ std::string User::getLogin()
 {
 	return _login;
 }
+
 std::string User::getPassword()
 {
 	return _password;
 }
+
 std::string User::getName()
 {
 	return _name;
 }
+
 std::string User::getSurname()
 {
 	return _surname;
 }
 
-
 void User::setLogin(std::string login)
 {
 	_login = login ;
 }
+
 void User::setPassword(std::string password)
 {
 	_password = password;
 }
+
 void User::setName(std::string name)
 {
 	_name = name;
 }
+
 void User::setSurname(std::string surname)
 {
 	_surname = surname;
 }
 
-
 void User::addFriends(std::string surname, std::string name, int a)
 {
 	_friends.push_back(Friends(name, surname, a));
 };
+
 size_t User::getSizeFriends()
 {
 	return _friends.size();
 };
+
 std::string User::getInfoFriends(int index)
 {
 	return _friends[index].getName();
 };
+
 void User::getFriends()
 {
 	for (int i = 0; i < _friends.size(); i++)
@@ -65,6 +72,7 @@ void User::getFriends()
 		std::cout <<_friends[i].getName() << " " <<_friends[i].getSurName() << std::endl;
 	}
 };
+
 bool User::checking_for_friends(std::vector <User>& other, int ñhoice)
 {
 	for (int i = 0; i < _friends.size(); i++)
@@ -77,6 +85,7 @@ bool User::checking_for_friends(std::vector <User>& other, int ñhoice)
 	}
 	return true;
 };
+
 bool User::checking_for_friends_to_add(int ñhoice)
 {
 	for (int i = 0; i < _friends.size(); i++)
@@ -88,6 +97,7 @@ bool User::checking_for_friends_to_add(int ñhoice)
 	}
 	return true;
 };
+
 int User::getIndexFriens(int a)
 {
 	return _friends[a].getIndex();

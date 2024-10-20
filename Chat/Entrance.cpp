@@ -48,7 +48,7 @@ bool Entrance::entranceLogin(std::vector<User>& other)
 {
 	while (true)
 	{
-		std::cout << "Введите логин: " << std::endl;
+		std::cout << "\nВведите логин: " << std::endl;
 		std::cin >> _loginScan;
 			
 		for (int i = 0; i < other.size(); i++)
@@ -59,7 +59,7 @@ bool Entrance::entranceLogin(std::vector<User>& other)
 				return true;
 			}
 		}
-		std::cout << "Такого пользователя не существует!" << std::endl;
+		std::cout << "\nТакого пользователя не существует!" << std::endl;
 		return false;
 	}
 }
