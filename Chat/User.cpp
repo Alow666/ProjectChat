@@ -86,18 +86,6 @@ bool User::checking_for_friends(std::vector <User>& other, int ñhoice)
 	return true;
 };
 
-bool User::checking_for_friends_to_add(int ñhoice)
-{
-	for (int i = 0; i < _friends.size(); i++)
-	{
-		if (ñhoice == _friends[i].getIndex())
-		{
-			return false;
-		};
-	}
-	return true;
-};
-
 int User::getIndexFriens(int a)
 {
 	return _friends[a].getIndex();

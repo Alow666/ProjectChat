@@ -36,7 +36,6 @@ public:
 	void getFriends();
 	std::string getInfoFriends(int index);
 	bool checking_for_friends(std::vector <User>& other, int ñhoice);
-	bool checking_for_friends_to_add(int ñhoice);
 	int getIndexFriens(int a);
 	void createMessage(int sender, std::string& text);
 	void sendMessage(std::vector <User>& other, int sender, int index, std::string& text);

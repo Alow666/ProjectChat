@@ -25,5 +25,5 @@ public:
 	bool getAccess();
 	int getIndex();
 	bool entranceLogin(std::vector<User>& other);
- bool entrancePassword(std::vector<User>& other);
+	bool entrancePassword(std::vector<User>& other);
 };
